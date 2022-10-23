@@ -1,0 +1,198 @@
+* {
+   /*box-sizing: border-box;*/
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    background-color: #e9f0e1;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #8dcdf1;
+    color: #060101;
+}
+
+/*name*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*nav bar*/
+.header section {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*for remove bullets*/
+.header div ul {
+    list-style-type: none;
+} 
+
+.header section ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*for links in nav*/
+a {
+    color: #0a0000;
+    text-decoration: none;
+}
+
+/*homepage picture*/
+.home{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+   
+}
+
+.about{
+    display: flex;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.work{
+    display: flex;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.aboutitem {
+    width: 150px;
+    margin: 5px;
+}
+
+.aboutitem1 {
+    min-height: 100px;
+    border-right:2px solid black;
+  
+}
+
+.workitem {
+    width: 150px;
+    margin: 5px;
+    min-height: 100px;
+    border-right:2px solid black;
+    display:block;
+}
+
+/*paragraph in about */
+.aboutitem2 {
+    display:inline-block;
+    width: 75%;
+    margin-left: 20px;
+    
+}
+
+section .work-container {
+   /*border: 1px solid black;*/
+    width: 1000px;
+    height:500px;
+}
+
+/*work-container class*/
+  section .content1 {
+   background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+    outline: 2px solid blueviolet;
+   height: 50%;
+    margin:5px;
+    
+}
+
+
+section .content2 {
+    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+    outline: 2px solid blueviolet;
+   margin:5px;
+   height:20%;
+   width:49%;
+   float:left;
+}
+
+section .content3 {
+    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+    outline: 2px solid blueviolet;
+    margin:5px;
+    height:20%;
+   width:49%;
+    float:left;
+   
+    
+
+}
+
+section .content4 {
+    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+    outline: 2px solid blueviolet;
+    margin:5px;
+    height:20%;
+    width:49%;
+    float:left;
+
+}
+
+section .content5 {
+    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+    outline: 2px solid blueviolet;
+    margin:5px;
+    height:20%;
+    width:49%;
+    float:left;
+}
+
+.footer {
+    display: flex;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footeritem {
+    min-height: 100px;
+    border-right:2px solid black;
+}
+
+.footer1 {
+    width: 150px;
+    margin: 5px;
+}
+
+
+.footer2 
+ {
+    margin:auto;
+   
+}
+
+.footer3{
+    margin:auto;
+   
+}
+
+.footer4{
+    margin:auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
