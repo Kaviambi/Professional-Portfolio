@@ -48,3 +48,8 @@ The following animation shows the web application's appearance and functionality
 7. For the responsive layout I have given if the page reached 900px. The sections and items on my page wrap them by using the styles I have given inside the media query. 
 
 Below is my deployed page -
+https://kaviambi.github.io/Professional-Portfolio/
+
+Here is the screenshot of my portfolio page - 
+![screenshot](./Images/screenshot1.JPG)
+![screenshot](./Images/screenshot2.JPG)
