@@ -71,9 +71,10 @@ a:hover{
 
 /*Below style for class about*/
 .about {
+    
     display: flex;
     margin: 20px;
-}
+    }
 /*Below style for the about section*/
 .aboutitem1 {
     width: 150px;
@@ -172,7 +173,7 @@ section .content3 {
     margin-top: 5%;
     font-size: 30px;
     left:56%;
-    background-color:rgb(115, 114, 114) ;
+    background-color:rgb(115, 114, 114);
 }
 
 /*mouse hover property*/
@@ -251,7 +252,7 @@ section .content5 {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1000px) {
     .header h1{
         text-align: center;
     }
@@ -301,7 +302,9 @@ h3{
             position: relative;
             margin:5px;
         }
+    
     }
+
 
 
 
