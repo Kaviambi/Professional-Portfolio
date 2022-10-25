@@ -1,24 +1,29 @@
+/* Universal element applies the below style to all element */
 * {
-   /*box-sizing: border-box;*/
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: rgb(44, 41, 40);
 } 
 
+/*Applies background color and font style to the body element*/
 body {
-    background-color: #e9f0e1;
+    background-color: #acacaa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*Below style for the header*/
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #8dcdf1;
-    color: #060101;
+    padding: 30px;
+    background: linear-gradient(#ef9e3322, #8d8c8c);;
 }
 
-/*name*/
+/*style applies for the name in header*/
 .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-weight: 300;
+    font-size: 50px;
+    color:rgb(0, 0, 0);
 }
 
 /*nav bar*/
@@ -26,65 +31,55 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
-
-/*for remove bullets*/
-.header div ul {
     list-style-type: none;
-} 
-
-.header section ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/*for links in nav*/
-a {
     color: #0a0000;
     text-decoration: none;
 }
 
+/*style for nav links*/
+.header section ul li {
+    display: inline-flex;
+    margin-left: 25px;
+    justify-content: space-between;
+    border: 1px solid blanchedalmond;
+}
+
+/*mouse hover style for nav links*/
+a:hover{
+    background-color: goldenrod;
+    transition-duration: 0.5s;
+}
+
 /*homepage picture*/
 .home{
-    height: 200px;
+    position: relative;
+    height: 150px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
-   
+    margin-bottom: 20px;
+    background-image: url("./Images/homepage.jpg");
 }
 
-.about{
+/*welcome h2 header style property*/
+.home h2 {
+    color: #130c0c; 
+    font-size: 35px; 
+   font-weight: 300;
+    text-align: center;
+    background-color: #b0b084;
+}
+
+/*Below style for class about*/
+.about {
     display: flex;
     margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.work{
-    display: flex;
-    margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-.aboutitem {
-    width: 150px;
-    margin: 5px;
-}
-
+/*Below style for the about section*/
 .aboutitem1 {
-    min-height: 100px;
-    border-right:2px solid black;
-  
-}
-
-.workitem {
     width: 150px;
     margin: 5px;
     min-height: 100px;
     border-right:2px solid black;
-    display:block;
 }
 
 /*paragraph in about */
@@ -92,97 +87,230 @@ a {
     display:inline-block;
     width: 75%;
     margin-left: 20px;
-    
+    line-height: 2;
+}
+/*margin and flex property for my work section*/
+.work{
+    display: flex;
+    margin: 20px;
 }
 
+.workitem{
+    width: 150px;
+    margin: 5px;
+    min-height: 100px;
+    border-right:2px solid black;
+}
+
+/*height and width for the container*/
 section .work-container {
    /*border: 1px solid black;*/
     width: 1000px;
     height:500px;
 }
 
-/*work-container class*/
+/*Image and styling property for html section*/
   section .content1 {
-   background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
-    outline: 2px solid blueviolet;
-   height: 50%;
+    background-image: url("./Images/htmls.jpg");
+    outline: 3px solid rgb(115, 114, 114) ;
+    height: 50%;
     margin:5px;
-    
 }
 
+/*Style propert for the font html in class content1*/
+.content1 h3{
+    position: absolute;
+    margin-top: 15%;
+    font-size: 30px;
+    left:15%;
+    background-color:rgb(115, 114, 114) ;
+}
 
+/*mouse hover property*/
+.content1:hover{
+    color: rgb(104, 4, 4);
+    box-shadow: 0 5px 15px rgba(249, 150, 3, 0.4);
+}
+
+/*Image and styling property for css section*/
 section .content2 {
-    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
-    outline: 2px solid blueviolet;
-   margin:5px;
-   height:20%;
-   width:49%;
-   float:left;
+    background-image: url("./Images/csss.jpg");
+    outline: 3px solid rgb(115, 114, 114);
+    margin:5px;
+    height:20%;
+    width:49%;
+    float:left;
+}
+/*Style propert for the font css in class content2*/
+.content2 h3{
+    position: absolute;
+    margin-top: 5%;
+    font-size: 30px;
+    left:15%;
+    background-color:rgb(115, 114, 114) ;
 }
 
+/*mouse hover property*/
+.content2:hover{
+    color: rgb(104, 4, 4);
+  box-shadow: 0 5px 15px rgba(249, 150, 3, 0.4);
+}
+
+/*Image and styling property for javascript section*/
 section .content3 {
-    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
-    outline: 2px solid blueviolet;
+    background-image: url("./Images/javascript.jpg");
+    outline: 3px solid rgb(115, 114, 114);
     margin:5px;
     height:20%;
-   width:49%;
+    width:49%;
     float:left;
-   
-    
-
 }
 
+/*Style propert for the font javascript in class content3*/
+.content3 h3{
+    position: absolute;
+    margin-top: 5%;
+    font-size: 30px;
+    left:56%;
+    background-color:rgb(115, 114, 114) ;
+}
+
+/*mouse hover property*/
+.content3:hover{
+    color: rgb(104, 4, 4);
+  box-shadow: 0 5px 15px rgba(249, 150, 3, 0.4);
+}
+
+/*Image and styling property for java section*/
 section .content4 {
-    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
-    outline: 2px solid blueviolet;
+    background-image: url("./Images/java.jpg");
+    outline: 3px solid rgb(115, 114, 114);
     margin:5px;
     height:20%;
     width:49%;
     float:left;
-
 }
 
+/*Style propert for the font java in class content4*/
+.content4 h3{
+    position: absolute;
+    margin-top: 5%;
+    font-size: 30px;
+    left:15%;
+    background-color:rgb(115, 114, 114) ;
+}
+
+/*mouse hover property*/
+.content4:hover{
+    color: rgb(104, 4, 4);
+    box-shadow: 0 5px 15px rgba(249, 150, 3, 0.4);
+}
+
+/*Image and styling property for oops section*/
 section .content5 {
-    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
-    outline: 2px solid blueviolet;
+    background-image: url("./Images/oops.jpg");
+    outline: 3px solid rgb(115, 114, 114);
     margin:5px;
     height:20%;
     width:49%;
     float:left;
+}
+
+/*Style propert for the font oops in class content5*/
+.content5 h3{
+    position: absolute;
+    margin-top: 5%;
+    font-size: 30px;
+    left:56%;
+    background-color:rgb(115, 114, 114) ;
+}
+
+/*mouse hover property*/
+.content5:hover{
+    color: rgb(104, 4, 4);
+    box-shadow: 0 5px 15px rgba(249, 150, 3, 0.4);
 }
 
 .footer {
     display: flex;
     margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*width,height, border property for footeritem class*/
 .footeritem {
     min-height: 100px;
     border-right:2px solid black;
-}
-
-.footer1 {
     width: 150px;
     margin: 5px;
 }
 
-
-.footer2 
+/*Below style for contact me section*/
+.footers 
  {
-    margin:auto;
-   
+    margin:auto; 
+    text-decoration: underline;
 }
 
-.footer3{
-    margin:auto;
-   
-}
+@media only screen and (max-width:1000px){
+    .header h1{
+        text-align: center;
+    }
+    .home{
+        visibility: hidden;
+    }
+    .header section ul li{
+        flex-direction: column;
+        position: relative;
+    }
+    .footer {
+        float:left;
+    }
 
-.footer4{
-    margin:auto;
+    section .content1{
+        height:30%;
+        width:100%;
+        position: relative;
+    }
+
+    section .content2{
+        height:15%;
+        width:100%;
+        position: relative;
+    }
+
+    section .content3{
+        height:15%;
+        width:100%;
+        position: relative;
+    }
     
+    section .content4{
+        height:15%;
+        width:100%;
+        position: relative;
+    }
+    section .content5 {
+            height:15%;
+            width:100%;
+            position: relative;
+        }
+h3{
+    font-size: 20px;
 }
+        .footers{
+            position: relative;
+            margin:5px;
+        }
+    }
+
+
+
+
+
+}
+
+
+
 
 
 
